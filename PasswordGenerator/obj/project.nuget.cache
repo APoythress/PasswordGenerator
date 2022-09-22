@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YQc6FG5fP1CT/3PXLj2x2TwfDX+CxfTCsRlTYjCyxwJAtZqGPTvcnwgwHDsqN66S5hZ/NajaWAPtZiyaaJwGOw==",
+  "dgSpecHash": "FCIuWl/0taP5i68PL/U4rh3/ZxpNvlOwJMQU+1QAFVU85cWsm4r5a7B8meuP0NJNqJ75cLrkTMF7YhX45P+0eA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\poyth\\.nuget\\packages\\bootstrap\\5.2.1\\bootstrap.5.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
