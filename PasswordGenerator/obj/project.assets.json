@@ -226,6 +226,16 @@
             "copyToOutput": false
           }
         }
+      },
+      "PasswordGenerator.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PasswordGenerator.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PasswordGenerator.DataAccess.dll": {}
+        }
       }
     }
   },
@@ -329,27 +339,38 @@
         "contentFiles/any/any/wwwroot/js/bootstrap.min.js",
         "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map"
       ]
+    },
+    "PasswordGenerator.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../PasswordGenerator.DataAccess/PasswordGenerator.DataAccess.csproj",
+      "msbuildProject": "../PasswordGenerator.DataAccess/PasswordGenerator.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "PasswordGenerator.DataAccess >= 1.0.0",
       "bootstrap >= 5.2.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\poyth\\.nuget\\packages\\": {}
+    "C:\\Users\\poyth\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.csproj",
+      "projectUniqueName": "C:\\Users\\poyth\\OneDrive\\D-Dump\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.csproj",
       "projectName": "PasswordGenerator",
-      "projectPath": "D:\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.csproj",
+      "projectPath": "C:\\Users\\poyth\\OneDrive\\D-Dump\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.csproj",
       "packagesPath": "C:\\Users\\poyth\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator\\obj\\",
+      "outputPath": "C:\\Users\\poyth\\OneDrive\\D-Dump\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\poyth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -357,12 +378,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\poyth\\OneDrive\\D-Dump\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.DataAccess\\PasswordGenerator.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\poyth\\OneDrive\\D-Dump\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGenerator.DataAccess\\PasswordGenerator.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
