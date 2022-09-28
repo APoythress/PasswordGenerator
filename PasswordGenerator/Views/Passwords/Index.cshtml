@@ -1,7 +1,18 @@
 ﻿@model PasswordsViewModel
 
+<style>
+    body {
+        background-color: #E7ECEF;
+    }
 
-<container class="m-5 bg-body bg-gradient">
+    .custom-format {
+        border: solid;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+</style>
+
+<container class="m-5">
     <div class="text-center">
         <h4>Random Password Generator</h4>
         <p>
@@ -21,25 +32,33 @@
         <!-- Form: -->
         <!-- No UI has been added yet. Just basics to test functionality. -->
         <form method="post" action="Index" class="d-flex flex-column text-center">
+            <!-- Print Results To Window: -->
+            <span class="m-2">
+                <p class="bg-dark bg-gradient text-white custom-format" id="GeneratedPw">@Model.PasswordGenerated</p>
+            </span>
+
+            <!-- Number Input:-->
             <span class="m-2" id="">
                 <label>Number of Characters: </label>
                 <input type="number" id="numOfChars" name="numOfChars" value="@Model.NumOfChars" placeholder="Number of Characters">
             </span>
 
+            <!-- Checkbox: -->
             <span class="m-2">
                 <label for="useSpecial">Check for special characters: </label>
                 <input type="checkbox" id="UseSpecialChars" name="UseSpecialChars" asp-for="UseSpecialChars">
             </span>
 
+            <!-- Submit Button: -->
             <span class="m-2">
-                <button type="submit" class="bg-dark bg-gradient text-light rounded-pill link-danger" style="padding: 1px 10px;">Submit</button>
+                <button type="submit" onclick="javascript:showElement()" class="bg-dark bg-gradient text-light rounded-pill link-danger" style="padding: 1px 10px;">Submit</button>
             </span>
 
-            <span class="m-2">
-                <p>@Model.PasswordGenerated</p>
-            </span>
+            
         </form>
 
     </div>
 </container>
+
+
 
